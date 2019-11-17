@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  client:
+    build: ./dashboard
+    ports:
+      - 3000:3000
+    volumes: 
+      - ./dashboard:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+      
+
+  server:
+    build: ./api
+    ports:
+      - 3001:3001
+    volumes:
+      - ./api:/usr/src/backend-app
+      - node_modules_b:/usr/src/backend-app/node_modules
+    depends_on: 
+      - mongo
+
+  mongo:
+    image: mongo
+    volumes:
+      - data:/data/db
+    ports:
+      - "27017:27017"
+
+volumes: 
+  node_modules:
+  node_modules_b:
+  data:
+    
+
+
+  
+
+
+    
+
+    

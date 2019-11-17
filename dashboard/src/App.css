@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  dl {
+    padding: 0.5em;
+  }
+  dt {
+    float: left;
+    clear: left;
+    width: 120px;
+    text-align: right;
+    font-weight: bold;
+  }
+  dt::after {
+    content: ":";
+  }
+  dd {
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 30px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    border: none;
+    background: #555;
+    color: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #666;
+  }
+
+.carbonads {
+    position: static;
+    padding: 15px 15px;
+    margin: 10px 0px;
+    overflow: hidden;
+    font-size: .8125rem;
+    line-height: 1.4;
+    text-align: left;
+    border-left: 1px solid #ced4da;
+    box-shadow: 0 0 2px
+    rgba(0, 0, 0, 0.065);
+}
+
+.columnStyle-2 {
+  float: left;
+  width: 50%;
+}
+
+.columnStyle {
+    float: left;
+    width: 25%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .columnStyle {
+      width: 100%;
+    }
+
+    .columnStyle-2 {
+      width: 100%;
+    }
+  }
+
+.formStyle {
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:
+    #495057;
+    background-color:
+    #fff;
+    background-clip: padding-box;
+    border: 1px solid
+    #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-shadow: 0 1px 4px
+    rgba(0, 0, 0, 0.065);
+}
+
+.blockStyle {
+    display:block;
+    margin-bottom:10px;
+}
+
+.navStyle  {
+    min-height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color:
+    #fafafa;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid
+    #d4d4d4;
+    box-shadow: 0 1px 4px
+        rgba(0, 0, 0, 0.065);
+
+  }
+
+  .padderTop {
+    margin-top: 20px;
+  }
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color:#212529;
+  background-color:#f8f9fa;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+  padding: 0;
+  border: 0;
+}
